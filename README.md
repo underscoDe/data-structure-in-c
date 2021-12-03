@@ -1,15 +1,10 @@
-# Linked Lists manipulation
+# Data Structures manipulation
 
 ## Description
-Like arrays, Linked List is a linear data structure. Unlike arrays, linked list elements are not stored at a contiguous location; the elements are linked using pointers. Find here some manipulations of different types of Linked Lists written in C programming language.
+In computer science, a data structure is a data organization, management, and storage format that enables efficient access and modification. More precisely, a data structure is a collection of data values, the relationships among them, and the functions or operations that can be applied to the data, i.e., it is an algebraic structure about data.
 
-![Linked Lists](https://www.programmingsimplified.com/images/c/linked-list.png)
+![Data Structures](https://cdn.ttgtmedia.com/rms/onlineimages/whatis-data_structure_mobile.png)
 
  ## Structures
 
-*  [0x00. C - Singly Linked Lists](./singly-linked_lists)
-
-*  [0x01. C - Doubly Linked Lists](./doubly-linked_lists)
-
-*  [0x02. C - Circular Linked Lists](./circular-linked_lists)
-
+*  [0x00. C - Stacks - LIFO](./stacks-lifo)
