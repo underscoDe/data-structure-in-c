@@ -6,6 +6,7 @@
  * Auth: Arsene Awounou
  */
 
+#include <stdio.h>
 #include <stdlib.h>
 
 /**
@@ -30,7 +31,8 @@ typedef struct StackElement
     struct StackElement *next;
 } StackElement, *Stack;
 
-Stack *new_stack(void);
+Stack new_stack(void);
 Bool is_stack_empty(Stack);
+Stack push_stack(Stack, int);
 
 #endif STACKS_H /* STACKS_H */
