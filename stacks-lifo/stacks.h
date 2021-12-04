@@ -18,4 +18,6 @@ typedef struct StackElement {
     struct StackElement *next;
 } StackElement, *Stack;
 
+Stack *new_stack(void);
+
 #endif STACKS_H /* STACKS_H */
