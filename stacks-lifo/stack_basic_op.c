@@ -6,7 +6,7 @@
  * Return: NULL
  *
  */
-Stack *new_stack(void)
+Stack new_stack(void)
 {
     return (NULL);
 }
