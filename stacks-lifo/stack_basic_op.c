@@ -47,3 +47,16 @@ Stack push_stack(Stack stack, int data)
 
     return (new_element);
 }
+
+Stack free_stack(Stack stack)
+{
+    StackElement *stack_element;
+
+    if (is_stack_empty(stack))
+        return new_stack();
+
+    stack_element = stack->next;
+    free(stack);
+
+    return (free_stack(stack_element));
+}
