@@ -63,3 +63,24 @@ Stack free_stack(Stack stack)
 
     return (free_stack(stack_element));
 }
+
+/**
+ * print_stack - print all element in a stack
+ *
+ * @stack: the stack element to print
+ * Return: nothing
+ */
+void print_stack(Stack stack)
+{
+    if (is_stack_empty(stack))
+    {
+        printf("Stack is empty\n");
+        return;
+    }
+
+    while (!is_stack_empty(stack))
+    {
+        printf("[%d] ", stack->data);
+        stack = stack->next;
+    }
+}
