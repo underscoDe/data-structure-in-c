@@ -4,7 +4,6 @@
  * new_stack - returns an empty stack
  *
  * Return: NULL
- *
  */
 Stack new_stack(void)
 {
@@ -15,7 +14,6 @@ Stack new_stack(void)
  * is_stack_empty - checks if the stack is empty
  *
  * @stack: the stack to check
- *
  * Return: true if the stack is empty, false otherwise
  */
 Bool is_stack_empty(Stack stack)
@@ -28,7 +26,6 @@ Bool is_stack_empty(Stack stack)
  *
  * @stack: the stack to push the element to
  * @data: the element to push
- *
  * Return: the new stack
  */
 Stack push_stack(Stack stack, int data)
@@ -48,6 +45,12 @@ Stack push_stack(Stack stack, int data)
     return (new_element);
 }
 
+/**
+ * free_stack - clear a stack element
+ *
+ * @stack: the stack element to free
+ * Return: The empty stack
+ */
 Stack free_stack(Stack stack)
 {
     StackElement *stack_element;
