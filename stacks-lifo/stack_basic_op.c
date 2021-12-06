@@ -84,3 +84,8 @@ void print_stack(Stack stack)
         stack = stack->next;
     }
 }
+
+/*
+Betty coding style: a file shouldn't contain more than 5 functions
+Find the other functions in stack_basic_op2.c ;)
+*/
