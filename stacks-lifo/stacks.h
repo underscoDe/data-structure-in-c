@@ -37,5 +37,6 @@ Stack push_stack(Stack, int);
 Stack free_stack(Stack);
 void print_stack(Stack);
 Stack pop_stack(Stack);
+int top_stack(Stack);
 
 #endif STACKS_H /* STACKS_H */

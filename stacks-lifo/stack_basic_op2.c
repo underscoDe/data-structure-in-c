@@ -18,3 +18,20 @@ Stack pop_stack(Stack stack)
 
     return (element);
 }
+
+/**
+ * top_stack - returns the value of the top element of the stack
+ *
+ * @stack: the stack to get the top element from
+ * Return: the top element's value if the stack isn't empty
+ */
+int top_stack(Stack stack)
+{
+    if (is_stack_empty(stack))
+    {
+        printf("The stack is empty!\n");
+        return;
+    }
+
+    return stack->data;
+}
