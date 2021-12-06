@@ -35,3 +35,22 @@ int top_stack(Stack stack)
 
     return stack->data;
 }
+
+/**
+ * stack_length - returns the length of the stack
+ *
+ * @stack: the stack to get the length of
+ * @Return: the length of the stack
+ */
+int stack_length(Stack stack)
+{
+    int len = 0;
+
+    while (!is_stack_empty(stack))
+    {
+        len++;
+        stack = stack->next;
+    }
+
+    return (len);
+}
