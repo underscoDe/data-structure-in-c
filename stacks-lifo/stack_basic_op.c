@@ -7,7 +7,7 @@
  */
 Stack new_stack(void)
 {
-    return (NULL);
+	return (NULL);
 }
 
 /**
@@ -18,7 +18,7 @@ Stack new_stack(void)
  */
 Bool is_stack_empty(Stack stack)
 {
-    return (stack == NULL);
+	return (stack == NULL);
 }
 
 /**
@@ -30,19 +30,19 @@ Bool is_stack_empty(Stack stack)
  */
 Stack push_stack(Stack stack, int data)
 {
-    StackElement *new_element;
+	StackElement *new_element;
 
-    new_element = (StackElement *)malloc(sizeof(StackElement));
-    if (new_element == NULL)
-    {
-        fprintf(stderr, "Can't allocate stack element\n");
-        exit(EXIT_FAILURE);
-    }
+	new_element = (StackElement *)malloc(sizeof(StackElement));
+	if (new_element == NULL)
+	{
+		fprintf(stderr, "Can't allocate stack element\n");
+		exit(EXIT_FAILURE);
+	}
 
-    new_element->data = data;
-    new_element->next = stack;
+	new_element->data = data;
+	new_element->next = stack;
 
-    return (new_element);
+	return (new_element);
 }
 
 /**
@@ -53,15 +53,15 @@ Stack push_stack(Stack stack, int data)
  */
 Stack free_stack(Stack stack)
 {
-    StackElement *stack_element;
+	StackElement *stack_element;
 
-    if (is_stack_empty(stack))
-        return new_stack();
+	if (is_stack_empty(stack))
+		return (new_stack());
 
-    stack_element = stack->next;
-    free(stack);
+	stack_element = stack->next;
+	free(stack);
 
-    return (free_stack(stack_element));
+	return (free_stack(stack_element));
 }
 
 /**
@@ -72,20 +72,20 @@ Stack free_stack(Stack stack)
  */
 void print_stack(Stack stack)
 {
-    if (is_stack_empty(stack))
-    {
-        printf("Stack is empty\n");
-        return;
-    }
+	if (is_stack_empty(stack))
+	{
+		printf("Stack is empty\n");
+		return;
+	}
 
-    while (!is_stack_empty(stack))
-    {
-        printf("[%d] ", stack->data);
-        stack = stack->next;
-    }
+	while (!is_stack_empty(stack))
+	{
+		printf("[%d] ", stack->data);
+		stack = stack->next;
+	}
 }
 
 /*
-Betty coding style: a file shouldn't contain more than 5 functions
-Find the other functions in stack_basic_op2.c ;)
+* Betty coding style: a file shouldn't contain more than 5 functions
+* Find the other functions in stack_basic_op2.c ;)
 */
