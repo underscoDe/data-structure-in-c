@@ -30,7 +30,7 @@ int top_stack(Stack stack)
     if (is_stack_empty(stack))
     {
         printf("The stack is empty!\n");
-        return;
+        return (-1);
     }
 
     return stack->data;

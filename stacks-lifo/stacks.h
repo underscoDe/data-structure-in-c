@@ -40,4 +40,4 @@ Stack pop_stack(Stack);
 int top_stack(Stack);
 int stack_length(Stack);
 
-#endif STACKS_H /* STACKS_H */
+#endif /* STACKS_H */
