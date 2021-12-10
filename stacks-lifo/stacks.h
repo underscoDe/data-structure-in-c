@@ -16,19 +16,19 @@
  */
 typedef enum Bool
 {
-    false,
-    true
+	false,
+	true
 } Bool;
 
 /**
- * struct Stack - Stack structure
+ * struct StackElement - Stack structure
  * @data: integer data elements
  * @next: pointer to the next Stack element
  */
 typedef struct StackElement
 {
-    int data;
-    struct StackElement *next;
+	int data;
+	struct StackElement *next;
 } StackElement, *Stack;
 
 Stack new_stack(void);
