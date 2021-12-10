@@ -83,6 +83,7 @@ void print_stack(Stack stack)
 		printf("[%d] ", stack->data);
 		stack = stack->next;
 	}
+	printf("\n");
 }
 
 /*
