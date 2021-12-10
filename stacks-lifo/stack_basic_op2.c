@@ -8,15 +8,15 @@
  */
 Stack pop_stack(Stack stack)
 {
-    StackElement *element;
+	StackElement *element;
 
-    if (is_stack_empty(stack))
-        return new_stack();
+	if (is_stack_empty(stack))
+		return (new_stack());
 
-    element = stack->next;
-    free(stack);
+	element = stack->next;
+	free(stack);
 
-    return (element);
+	return (element);
 }
 
 /**
@@ -27,30 +27,30 @@ Stack pop_stack(Stack stack)
  */
 int top_stack(Stack stack)
 {
-    if (is_stack_empty(stack))
-    {
-        printf("The stack is empty!\n");
-        return (-1);
-    }
+	if (is_stack_empty(stack))
+	{
+		printf("The stack is empty!\n");
+		return (-1);
+	}
 
-    return stack->data;
+	return (stack->data);
 }
 
 /**
  * stack_length - returns the length of the stack
  *
  * @stack: the stack to get the length of
- * @Return: the length of the stack
+ * Return: the length of the stack
  */
 int stack_length(Stack stack)
 {
-    int len = 0;
+	int len = 0;
 
-    while (!is_stack_empty(stack))
-    {
-        len++;
-        stack = stack->next;
-    }
+	while (!is_stack_empty(stack))
+	{
+		len++;
+		stack = stack->next;
+	}
 
-    return (len);
+	return (len);
 }
